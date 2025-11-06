@@ -6,7 +6,7 @@
 ---
 
 ## 🌐 ライブデモ
-> [https://your-portfolio-link.vercel.app](https://your-portfolio-link.vercel.app 近日更新予定)
+> [https://self-introduction-jp.vercel.app/](https://self-introduction-jp.vercel.app/)
 
 ---
 
