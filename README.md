@@ -157,3 +157,4 @@ Feel free to **fork**, **modify**, and **adapt** it for your own use.
 > to represent a *3-year-experience-level developer’s* full-stack skill set.  
 > Thank you for visiting! 🌸
 
+# self_introduction_JP
