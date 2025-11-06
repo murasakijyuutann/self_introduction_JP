@@ -1,90 +1,86 @@
-# 🌸 Self Introduction / Developer Portfolio — *Fishyboyxx*
+# 🌸 自己紹介 / 開発者ポートフォリオ — *Fishyboyxx*
 
-A personal developer portfolio built with **React + Vite + TypeScript + Styled Components**, featuring smooth animations, bilingual-friendly sections, and a clean, modern UI inspired by **Hatsune Miku’s mint–pink color palette**.  
-This site introduces my journey, skills, and projects while showcasing the ability to design, build, and deploy production-ready React applications.
-
----
-
-## 🌐 Live Demo
-> [https://your-portfolio-link.vercel.app](https://your-portfolio-link.vercel.app will be updated soon)
+**React + Vite + TypeScript + Styled Components**で構築された個人開発者ポートフォリオです。スムーズなアニメーション、バイリンガル対応のセクション、そして**初音ミクのミント×ピンクカラーパレット**にインスパイアされたクリーンでモダンなUIが特徴です。  
+このサイトでは、私の歩み、スキル、プロジェクトを紹介し、プロダクションレベルのReactアプリケーションを設計・構築・デプロイする能力を実証しています。
 
 ---
 
-## 🧭 Overview
-
-This portfolio serves as both a **self-introduction** and **interactive resume**, demonstrating practical use of modern frontend tools.  
-Each section represents a part of my growth as a developer, from backend integration to UI design.
-
-### ✨ Features
-- 🎨 **Miku-themed gradient** aesthetic with responsive layouts  
-- 🪶 **Framer Motion animations** for smooth visual transitions  
-- 🧠 **Reusable styled components** for scalability and clean design  
-- 🧩 **Interactive Chinchirorin Game** built in React (mini-project showcase)  
-- 💬 **EmailJS contact form** for direct communication  
-- 🌎 **Bilingual-ready layout** (English with room for Japanese expansion)  
-- 🔗 **Active navigation highlights** and accessibility-friendly markup
+## 🌐 ライブデモ
+> [https://your-portfolio-link.vercel.app](https://your-portfolio-link.vercel.app 近日更新予定)
 
 ---
 
-## 🧱 Tech Stack
+## 🧭 概要
 
-| Category | Tools & Frameworks |
+このポートフォリオは、**自己紹介**と**インタラクティブな履歴書**の両方として機能し、モダンなフロントエンドツールの実用的な使用法を実証しています。  
+各セクションは、バックエンド統合からUI設計まで、開発者としての私の成長の一部を表しています。
+
+### ✨ 特徴
+- 🎨 レスポンシブレイアウトを備えた**ミクテーマのグラデーション**美学  
+- 🪶 滑らかな視覚的トランジションのための**Framer Motionアニメーション**  
+- 🧠 スケーラビリティとクリーンな設計のための**再利用可能なスタイルコンポーネント**  
+- 🧩 Reactで構築された**インタラクティブなチンチロリンゲーム**（ミニプロジェクトショーケース）  
+- 💬 直接コミュニケーションのための**EmailJS連絡フォーム**  
+- 🌎 **バイリンガル対応レイアウト**（英語、日本語拡張可能）  
+- 🔗 **アクティブナビゲーションハイライト**とアクセシビリティに配慮したマークアップ
+
+---
+
+## 🧱 技術スタック
+
+| カテゴリ | ツール & フレームワーク |
 |-----------|--------------------|
-| **Frontend** | React (Vite), TypeScript, Styled Components, Framer Motion |
-| **Backend (for future expansion)** | Spring Boot · MyBatis · Node.js · Express |
-| **Utilities** | EmailJS, Axios, Postman, Swagger |
-| **Cloud / Deployment** | AWS EC2, Vercel |
-| **Design** | Tailwind (legacy sections), custom gradients |
-| **Version Control** | Git, GitHub |
+| **フロントエンド** | React (Vite)、TypeScript、Styled Components、Framer Motion |
+| **バックエンド (将来の拡張用)** | Spring Boot · MyBatis · Node.js · Express |
+| **ユーティリティ** | EmailJS、Axios、Postman、Swagger |
+| **クラウド / デプロイ** | AWS EC2、Vercel |
+| **デザイン** | Tailwind (レガシーセクション)、カスタムグラデーション |
+| **バージョン管理** | Git、GitHub |
 
 ---
 
-## 🗂️ Project Structure
+## 🗂️ プロジェクト構造
 
 ```
 src/
 ┣ components/
-┃ ┣ Navbar.tsx # Responsive navigation bar with active link highlighting
-┃ ┣ Home.tsx # Hero section with typewriter intro
-┃ ┣ About.tsx # Self introduction and career goals
-┃ ┣ Journey.tsx # Timeline of studies and career progress
-┃ ┣ Skills.tsx # Categorized skill badges with motion effects
-┃ ┣ Projects.tsx # Portfolio showcase with GitHub links
-┃ ┣ Chinchiro.tsx # Mini React dice game (文化×技術 concept)
-┃ ┣ Contact.tsx # Email form integrated with EmailJS
-┃ ┗ Footer.tsx # Social icons + tagline
+┃ ┣ Navbar.tsx # アクティブリンクハイライト付きレスポンシブナビゲーションバー
+┃ ┣ Home.tsx # タイプライター風イントロ付きヒーローセクション
+┃ ┣ About.tsx # 自己紹介とキャリア目標
+┃ ┣ Journey.tsx # 学習とキャリアの進捗タイムライン
+┃ ┣ Skills.tsx # モーションエフェクト付きカテゴリ別スキルバッジ
+┃ ┣ Projects.tsx # GitHubリンク付きポートフォリオショーケース
+┃ ┣ Chinchiro.tsx # ミニReactダイスゲーム（文化×技術コンセプト）
+┃ ┣ Contact.tsx # EmailJS統合メールフォーム
+┃ ┗ Footer.tsx # ソーシャルアイコン + タグライン
 ┣ styles/
-┃ ┗ AnimatedBackground.ts # Shared gradient animation
+┃ ┗ AnimatedBackground.ts # 共有グラデーションアニメーション
 ┣ App.tsx
 ┗ main.tsx
 ```
 
-
-yaml
-Copy code
-
 ---
 
-# 🚀 Getting Started
+# 🚀 はじめに
 
-## 💻 Setup & Run Locally
+## 💻 セットアップ & ローカル実行
 
-### 🧩 Step 1. Clone the Repository
+### 🧩 ステップ 1. リポジトリをクローン
 
 ```bash
 git clone https://github.com/yourusername/self-intro-portfolio.git
 cd self-intro-portfolio
 ```
 
-### ⚙️ Step 2. Install Dependencies
+### ⚙️ ステップ 2. 依存関係をインストール
 
 ```bash
 npm install
 ```
 
-### 🔐 Step 3. Configure EmailJS Environment Variables
+### 🔐 ステップ 3. EmailJS環境変数を設定
 
-Create a .env file in your project root and add the following:
+プロジェクトルートに `.env` ファイルを作成し、以下を追加します：
 
 ```bash
 VITE_EMAILJS_SERVICE_ID=your_service_id
@@ -92,33 +88,33 @@ VITE_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
-### 🚀 Step 4. Run the Development Server
+### 🚀 ステップ 4. 開発サーバーを起動
 ```bash
 npm run dev
 ```
 
-Then open 👉 http://localhost:5173
- in your browser.
-
-### 💼 Featured Projects
-
-| Project | Description | Tech Stack |
-|----------|--------------|------------|
-| 🎬 Movie Explorer | TMDB API-powered React app with infinite scroll & responsive UI | React · Tailwind CSS · TMDB API |
-| 📋 Spring Boot Board | Token-authenticated backend with DTOs, Swagger UI & role access control | Spring Boot · MyBatis · JWT |
-| 🛍 JSP Shopping Mall | JSP/Servlet-based e-commerce prototype with login & cart system | JSP · JSTL · Tomcat |
-| ☁️ EC2 Todo App | Full-stack app deployed on AWS EC2 with Supabase OAuth login | React · NestJS · Prisma |
-| 🎧 Vocaloid DAO Simulator | Java OOP collection project themed around Vocaloid characters | Java · DAO Pattern |
-| 🎲 Chinchirorin Game | Traditional Japanese dice game remake with sound & motion | React · Framer Motion · Howler.js |
-
+その後、ブラウザで 👉 http://localhost:5173 を開きます。
 
 ---
 
-### 📫 Contact
+## 💼 注目プロジェクト
 
-If you’d like to get in touch or collaborate:
+| プロジェクト | 説明 | 技術スタック |
+|----------|--------------|------------|
+| 🎬 Movie Explorer | 無限スクロール & レスポンシブUIを備えたTMDB API駆動のReactアプリ | React · Tailwind CSS · TMDB API |
+| 📋 Spring Boot Board | DTO、Swagger UI、ロールアクセス制御を備えたトークン認証バックエンド | Spring Boot · MyBatis · JWT |
+| 🛍 JSP Shopping Mall | ログイン & カートシステムを備えたJSP/Servletベースのeコマースプロトタイプ | JSP · JSTL · Tomcat |
+| ☁️ EC2 Todo App | Supabase OAuthログインを備えたAWS EC2にデプロイされたフルスタックアプリ | React · NestJS · Prisma |
+| 🎧 Vocaloid DAO Simulator | VocaloidキャラクターをテーマにしたJava OOPコレクションプロジェクト | Java · DAOパターン |
+| 🎲 Chinchirorin Game | サウンド & モーション付き伝統的な日本のダイスゲームリメイク | React · Framer Motion · Howler.js |
 
-| Platform | Link |
+---
+
+## 📫 連絡先
+
+お問い合わせやコラボレーションをご希望の場合：
+
+| プラットフォーム | リンク |
 |-----------|------|
 | 💌 **Email** | [fishyboyxx@protonmail.com](mailto:fishyboyxx@protonmail.com) |
 | 🐙 **GitHub** | [github.com/murasakijyuutann](https://github.com/murasakijyuutann) |
@@ -127,35 +123,32 @@ If you’d like to get in touch or collaborate:
 
 ---
 
-### 🧩 Philosophy
+## 🧩 哲学
 
-> “**Code is my language. Culture is my bridge.**”  
-> This portfolio reflects my mission to combine technical skill, creativity,  
-> and cross-cultural understanding in every project I build.
-
----
-
-### 🛠️ Future Plans
-
-- 🇯🇵 Add **日本語版ページ (Japanese version)** toggle  
-- 🔗 Integrate **Spring Boot API backend** for dynamic project updates  
-- 🌗 Add **Dark Mode** toggle for accessibility  
-- ☁️ Deploy via **Vercel + AWS Route 53** custom domain  
+> **「コードは私の言語。文化は私の架け橋。」**  
+> このポートフォリオは、私が構築するすべてのプロジェクトにおいて、  
+> 技術的スキル、創造性、異文化理解を融合させるという使命を反映しています。
 
 ---
 
-### 🧾 License
+## 🛠️ 今後の計画
 
-This project is open-source under the **MIT License**.  
-Feel free to **fork**, **modify**, and **adapt** it for your own use.
+- 🇯🇵 **日本語版ページ**トグルを追加  
+- 🔗 動的なプロジェクト更新のための**Spring Boot APIバックエンド**を統合  
+- 🌗 アクセシビリティのための**ダークモード**トグルを追加  
+- ☁️ **Vercel + AWS Route 53**カスタムドメインでデプロイ  
 
 ---
 
-### 💬 Final Words
+## 🧾 ライセンス
 
-> This portfolio was designed and built by **Farah Sinclair (Fishyboyxx)**  
-> to represent a *3-year-experience-level developer’s* full-stack skill set.  
-> Thank you for visiting! 🌸
+このプロジェクトは**MITライセンス**の下でオープンソースです。  
+自由に**フォーク**、**修正**、**適応**してご利用ください。
 
-# self_introduction_JP
-# self_introduction_JP
+---
+
+## 💬 最後に
+
+> このポートフォリオは、**Farah Sinclair (Fishyboyxx)**によって設計・構築され、  
+> *実務経験3年レベルの開発者*のフルスタックスキルセットを表現しています。  
+> ご訪問ありがとうございます！ 🌸
