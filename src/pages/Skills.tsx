@@ -146,9 +146,9 @@ export default function Skills() {
         transition={{ duration: 0.8 }}
       >
         <Header>
-          <Heading>Skills & Technologies</Heading>
+          <Heading>スキル & 技術スタック</Heading>
           <Subtitle>
-            A comprehensive toolkit built through hands-on projects and continuous learning
+            実務と個人開発を通じて積み上げたスキルセットです
           </Subtitle>
         </Header>
 
@@ -159,14 +159,14 @@ export default function Skills() {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <SectionTitle>Programming Languages</SectionTitle>
+            <SectionTitle>プログラミング言語</SectionTitle>
             <BadgeList>
               {renderBadges(['Java', 'JavaScript', 'TypeScript', 'Python', 'C', 'SQL'])}
             </BadgeList>
           </Section>
 
           <Section variants={sectionVariants}>
-            <SectionTitle>Frontend Development</SectionTitle>
+            <SectionTitle>フロントエンド開発</SectionTitle>
             <BadgeList>
               {renderBadges([
                 'React',
@@ -177,13 +177,13 @@ export default function Skills() {
                 'Tailwind CSS',
                 'HTML5',
                 'CSS3',
-                'Responsive Design',
+                'レスポンシブデザイン',
               ])}
             </BadgeList>
           </Section>
 
           <Section variants={sectionVariants}>
-            <SectionTitle>Backend & Frameworks</SectionTitle>
+            <SectionTitle>バックエンド & フレームワーク</SectionTitle>
             <BadgeList>
               {renderBadges([
                 'Spring Boot',
@@ -200,37 +200,37 @@ export default function Skills() {
           </Section>
 
           <Section variants={sectionVariants}>
-            <SectionTitle>Authentication & Security</SectionTitle>
+            <SectionTitle>認証 & セキュリティ</SectionTitle>
             <BadgeList>
               {renderBadges([
-                'JWT Authentication',
-                'Session Management',
+                'JWT 認証',
+                'セッション管理',
                 'OAuth 2.0',
                 'Google OAuth',
                 'Kakao OAuth',
-                'Password Encryption',
-                'CORS Configuration',
+                'パスワード暗号化',
+                'CORS 設定',
               ])}
             </BadgeList>
           </Section>
 
           <Section variants={sectionVariants}>
-            <SectionTitle>Database & Data</SectionTitle>
+            <SectionTitle>データベース & データ管理</SectionTitle>
             <BadgeList>
               {renderBadges([
                 'MySQL',
                 'PostgreSQL',
                 'Supabase',
-                'Database Design',
-                'SQL Optimization',
+                'データベース設計',
+                'SQL 最適化',
                 'DBeaver',
-                'Data Modeling',
+                'データモデリング',
               ])}
             </BadgeList>
           </Section>
 
           <Section variants={sectionVariants}>
-            <SectionTitle>DevOps & Deployment</SectionTitle>
+            <SectionTitle>DevOps & デプロイ</SectionTitle>
             <BadgeList>
               {renderBadges([
                 'AWS EC2',
@@ -240,28 +240,28 @@ export default function Skills() {
                 'SSH',
                 'Tomcat',
                 'VMWare',
-                'CI/CD Basics',
+                'CI/CD 基本',
               ])}
             </BadgeList>
           </Section>
 
           <Section variants={sectionVariants}>
-            <SectionTitle>Architecture & Patterns</SectionTitle>
+            <SectionTitle>設計思想 & パターン</SectionTitle>
             <BadgeList>
               {renderBadges([
-                'MVC Architecture',
-                'DTO Pattern',
-                'Layered Architecture',
-                'RESTful Design',
-                'Global Exception Handling',
-                'Service Layer Pattern',
-                'Repository Pattern',
+                'MVC アーキテクチャ',
+                'DTO パターン',
+                'レイヤードアーキテクチャ',
+                'RESTful 設計',
+                'グローバル例外処理',
+                'サービス層パターン',
+                'リポジトリパターン',
               ])}
             </BadgeList>
           </Section>
 
           <Section variants={sectionVariants}>
-            <SectionTitle>Development Tools</SectionTitle>
+            <SectionTitle>開発ツール</SectionTitle>
             <BadgeList>
               {renderBadges([
                 'Git & GitHub',
@@ -277,51 +277,51 @@ export default function Skills() {
           </Section>
 
           <Section variants={sectionVariants}>
-            <SectionTitle>Testing & Quality</SectionTitle>
+            <SectionTitle>テスト & 品質保証</SectionTitle>
             <BadgeList>
               {renderBadges([
-                'Unit Testing',
-                'API Testing',
-                'Debugging',
-                'Code Review',
-                'Performance Optimization',
-                'Error Handling',
+                'ユニットテスト',
+                'API テスト',
+                'デバッグ',
+                'コードレビュー',
+                'パフォーマンス最適化',
+                'エラーハンドリング',
               ])}
             </BadgeList>
           </Section>
 
           <Section variants={sectionVariants}>
-            <SectionTitle>Soft Skills & Languages</SectionTitle>
+            <SectionTitle>ソフトスキル & 言語</SectionTitle>
             <BadgeList>
               {renderBadges([
-                'English (Fluent)',
-                'Japanese (JLPT N1)',
-                'Korean (Native)',
-                'Technical Writing',
-                'Problem Solving',
-                'Team Collaboration',
-                'Self-Learning',
-                'Agile Mindset',
+                '英語（流暢）',
+                '日本語（JLPT N1）',
+                '韓国語（母語）',
+                '技術ライティング',
+                '問題解決力',
+                'チーム協力',
+                '自主学習',
+                'アジャイルマインドセット',
               ])}
             </BadgeList>
           </Section>
 
           <Section variants={sectionVariants}>
-            <SectionTitle>Currently Learning</SectionTitle>
+            <SectionTitle>現在学習中</SectionTitle>
             <BadgeList>
               {renderBadges([
                 'Kubernetes',
                 'Redis',
                 'GraphQL',
-                'Microservices',
-                'TypeScript Advanced',
-                'Cloud Architecture',
+                'マイクロサービス',
+                'TypeScript 応用',
+                'クラウドアーキテクチャ',
               ])}
             </BadgeList>
           </Section>
 
           <Section variants={sectionVariants}>
-            <SectionTitle>Certifications</SectionTitle>
+            <SectionTitle>資格・認定</SectionTitle>
             <BadgeList>
               {renderBadges(['JLPT N1 (2024.07)', 'IELTS 7.5 (2019.11)'])}
             </BadgeList>

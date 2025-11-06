@@ -31,22 +31,6 @@ const SocialIcons = styled.div`
   }
 `
 
-// const ModeLinks = styled.div`
-//   display: flex;
-//   gap: 1rem;
-//   margin-top: 0.5rem;
-//   font-size: 0.9rem;
-
-//   a {
-//     color: #aaa;
-//     text-decoration: underline;
-//     transition: color 0.3s;
-//     &:hover {
-//       color: #39c5bb;
-//     }
-//   }
-// `
-
 const Tagline = styled.p`
   font-size: 0.95rem;
   margin-top: 0.8rem;
@@ -79,24 +63,14 @@ export default function Footer() {
         <a href="https://qiita.com/murasakijyuutann" target="_blank" rel="noopener noreferrer" aria-label="Qiita">
           <SiQiita />
         </a>
-        <a href="mailto:neneke.emu@gmail.com" aria-label="Send Email">
+        <a href="mailto:neneke.emu@gmail.com" aria-label="メールを送信">
           <FaEnvelope />
         </a>
       </SocialIcons>
 
-      {/* 🌐 PC/Mobile Links (manual switch) */}
-      {/* <ModeLinks>
-        <a href="https://your-portfolio-link.vercel.app" target="_blank" rel="noopener noreferrer">
-          💻 PC Version
-        </a>
-        <a href="https://your-portfolio-link.vercel.app/mobile" target="_blank" rel="noopener noreferrer">
-          📱 Mobile Version
-        </a>
-      </ModeLinks> */}
-
-      <Tagline>Made with 💙 React, Styled Components, and creativity.</Tagline>
+      <Tagline>💙 React と Styled Components で作成しました。</Tagline>
       <Copyright>
-        © {new Date().getFullYear()} Farah Sinclair (Fishyboyxx). All Rights Reserved.
+        © {new Date().getFullYear()} Farah Sinclair (Fishyboyxx). 全著作権所有。
       </Copyright>
     </FooterContainer>
   )

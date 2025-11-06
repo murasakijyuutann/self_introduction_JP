@@ -5,19 +5,19 @@ import { motion } from 'framer-motion'
 import { FaDice, FaGlassWhiskey, FaInfoCircle } from 'react-icons/fa'
 import { Howl } from 'howler'
 
-// 🎵 Dice roll sound
+// 🎵 ダイスロール音
 const rollSound = new Howl({
   src: ['https://cdn.pixabay.com/audio/2022/03/15/audio_48a4c74b10.mp3'],
   volume: 0.3,
 })
 
-// 💫 Smooth fade-in animation
+// 💫 フェードインアニメーション
 const fadeIn = keyframes`
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 `
 
-// 🎲 Dice roll animation
+// 🎲 ダイス回転アニメーション
 const rollAnimation = keyframes`
   0% { transform: rotate(0deg); }
   25% { transform: rotate(90deg) scale(1.1); }
@@ -221,7 +221,7 @@ const LoadingText = styled.div`
 
 const getRandomDice = () => Math.floor(Math.random() * 6) + 1
 
-// =================== Game Logic ===================
+// =================== ゲームロジック ===================
 const getScoreRank = (d: number[]): number => {
   const sorted = [...d].sort()
   const [a, b, c] = sorted
@@ -248,16 +248,19 @@ const getResultText = (d: number[]): string => {
   return '目なし🎲'
 }
 
-// =================== Component ===================
+// =================== コンポーネント ===================
 export const ChinchiroGame: React.FC = () => {
   const [playerRole, setPlayerRole] = useState<'親' | '子' | null>(null)
   const [playerDice, setPlayerDice] = useState<number[]>([1, 1, 1])
   const [cpuDice, setCpuDice] = useState<number[]>([1, 1, 1])
+
   const [playerResult, setPlayerResult] = useState<string>('')
   const [cpuResult, setCpuResult] = useState<string>('')
+
   const [winner, setWinner] = useState<string>('')
   const [gameStarted, setGameStarted] = useState(false)
   const [message, setMessage] = useState<string>('')
+
   const [showCpuDice, setShowCpuDice] = useState<boolean>(false)
   const [isRolling, setIsRolling] = useState(false)
 
@@ -271,17 +274,17 @@ export const ChinchiroGame: React.FC = () => {
     setMessage('')
     setShowCpuDice(false)
     setIsRolling(true)
-    rollSound.play()
+    rollSound.play() // 🎧 ダイスの音を再生
 
-    // 🎲 Player rolls
+    // 🎲 プレイヤーのダイス
     const playerNew = [getRandomDice(), getRandomDice(), getRandomDice()]
     setPlayerDice(playerNew)
     setPlayerResult(getResultText(playerNew))
     
     setTimeout(() => setIsRolling(false), 500)
 
-    // ⏳ CPU turn delay
-    setMessage('Opponent is rolling...')
+    // ⏳ CPUの番
+    setMessage('CPU がダイスを振っています...')
     await new Promise((resolve) => setTimeout(resolve, 2000))
 
     setIsRolling(true)
@@ -294,18 +297,18 @@ export const ChinchiroGame: React.FC = () => {
     
     setTimeout(() => setIsRolling(false), 500)
 
-    // 🧠 Judge result
+    // 🧠 結果判定
     await new Promise((resolve) => setTimeout(resolve, 800))
     const playerScore = getScoreRank(playerNew)
     const cpuScore = getScoreRank(cpuNew)
 
     if (playerScore > cpuScore) {
-      setWinner(`🎉 You Win! (${playerRole})`)
+      setWinner(`🎉 勝利！ (${playerRole})`)
     } else if (cpuScore > playerScore) {
       const cpuRole = playerRole === '親' ? '子' : '親'
-      setWinner(`💀 CPU Wins! (${cpuRole})`)
+      setWinner(`💀 CPU の勝ち！ (${cpuRole})`)
     } else {
-      setWinner('🤝 It\'s a Draw!')
+      setWinner('🤝 引き分け！')
     }
   }
 
@@ -329,53 +332,55 @@ export const ChinchiroGame: React.FC = () => {
         transition={{ duration: 0.6 }}
       >
         <Title>
-          <FaGlassWhiskey /> Chinchirorin <FaDice />
+          <FaGlassWhiskey /> ちんちろりん <FaDice />
         </Title>
 
         <Intro>
-          A traditional Japanese dice game where luck meets strategy.
-          Choose your role and roll the dice to see who wins!
+          伝統的な日本のダイスゲーム。運と戦略の勝負！<br />
+          親か子を選んで、ダイスを振ろう！
         </Intro>
 
         <RulesBox>
           <summary>
-            <FaInfoCircle /> Game Rules
+            <FaInfoCircle /> ゲームルールを見る
           </summary>
           <ul>
-            <li><strong>ピンゾロ (Pin-zoro):</strong> Three 1s - Highest rank! 💥</li>
-            <li><strong>ゾロ (Zoro):</strong> Three of the same - Very strong 🔥</li>
-            <li><strong>シゴロ (Shigoro):</strong> 4-5-6 sequence - High rank ✨</li>
-            <li><strong>目 (Me):</strong> Two same + one different - The different number counts</li>
-            <li><strong>ヒフミ (Hifumi):</strong> 1-2-3 sequence - Lowest rank 💀</li>
-            <li><strong>目なし (Menashi):</strong> No matching - No score 🎲</li>
+            <li><strong>ピンゾロ：</strong> 1が3つ。最強の役！💥</li>
+            <li><strong>ゾロ目：</strong> 同じ数字3つ。強い役🔥</li>
+            <li><strong>シゴロ：</strong> 4-5-6 の並び。高い役✨</li>
+            <li><strong>〇の目：</strong> 2つ同じ + 1つ別の数字 → 別の数字が得点</li>
+            <li><strong>ヒフミ：</strong> 1-2-3 の並び。最低の役💀</li>
+            <li><strong>目なし：</strong> 役なし。得点ゼロ🎲</li>
           </ul>
         </RulesBox>
 
         {!gameStarted ? (
           <>
-            <SectionTitle>Choose Your Role</SectionTitle>
+            <SectionTitle>役割を選択</SectionTitle>
             <ChoiceArea>
               <Button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handleChoice('親')}
               >
-                👑 Oya (Parent)
+                👑 親
               </Button>
               <Button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handleChoice('子')}
               >
-                🧒 Ko (Child)
+                🧒 子
               </Button>
             </ChoiceArea>
           </>
         ) : (
           <>
-            <StatusBadge>You are: {playerRole} {playerRole === '親' ? '👑' : '🧒'}</StatusBadge>
+            <StatusBadge>
+              あなたの役割：{playerRole} {playerRole === '親' ? '👑' : '🧒'}
+            </StatusBadge>
 
-            <SectionTitle>🎲 Your Dice</SectionTitle>
+            <SectionTitle>🎲 あなたのダイス</SectionTitle>
             <DiceArea>
               {playerDice.map((num, i) => (
                 <Dice key={i} isRolling={isRolling}>
@@ -387,7 +392,7 @@ export const ChinchiroGame: React.FC = () => {
 
             {(showCpuDice || message) && (
               <>
-                <SectionTitle>💻 Opponent's Dice</SectionTitle>
+                <SectionTitle>💻 CPUのダイス</SectionTitle>
                 <DiceArea>
                   {showCpuDice ? (
                     cpuDice.map((num, i) => (
@@ -409,11 +414,11 @@ export const ChinchiroGame: React.FC = () => {
               onClick={playGame}
               disabled={isRolling}
             >
-              {isRolling ? '🎲 Rolling...' : '🎲 Roll Dice!'}
+              {isRolling ? '🎲 ダイスを振っています...' : '🎲 ダイスを振る！'}
             </Button>
 
             {winner && (
-              <ResultText isWinner={winner.includes('Win')} style={{ fontSize: '1.8rem', marginTop: '1.5rem' }}>
+              <ResultText isWinner={winner.includes('勝利')} style={{ fontSize: '1.8rem', marginTop: '1.5rem' }}>
                 {winner}
               </ResultText>
             )}
@@ -424,7 +429,7 @@ export const ChinchiroGame: React.FC = () => {
                 whileTap={{ scale: 0.95 }}
                 onClick={resetGame}
               >
-                🔁 Play Again
+                🔁 もう一度プレイ
               </SecondaryButton>
             )}
           </>

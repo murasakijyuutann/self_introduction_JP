@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { animatedGradient } from '../styles/AnimatedBackground'
 
-// 🌈 Full-page animated background
+// 🌈 フルページのアニメーション背景
 const Section = styled.section`
   ${animatedGradient};
   min-height: 100vh;
@@ -15,8 +15,8 @@ const Section = styled.section`
   padding: 6rem 1.5rem;
   color: #fff;
   text-align: center;
-  width: 100%; /* ✅ Fix: Prevent overflow */
-  overflow-x: hidden; /* ✅ Fix: Prevent horizontal scroll */
+  width: 100%;
+  overflow-x: hidden;
 `
 
 const Wrapper = styled(motion.div)`
@@ -27,11 +27,11 @@ const Wrapper = styled(motion.div)`
   border-radius: 20px;
   padding: 2.8rem 2.5rem;
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
-  box-sizing: border-box; /* ✅ Fix: Include padding in width calculation */
+  box-sizing: border-box;
 
   @media (max-width: 768px) {
-    padding: 2rem 1.5rem; /* ✅ Fix: Reduce padding on mobile */
-    margin: 0 1rem; /* ✅ Fix: Add margin for mobile */
+    padding: 2rem 1.5rem;
+    margin: 0 1rem;
   }
 `
 
@@ -42,7 +42,7 @@ const Heading = styled.h2`
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 
   @media (max-width: 768px) {
-    font-size: 2rem; /* ✅ Fix: Smaller heading on mobile */
+    font-size: 2rem;
   }
 `
 
@@ -56,10 +56,10 @@ const Input = styled.input`
   font-size: 1rem;
   color: #333;
   background: #fdfdfd;
-  box-sizing: border-box; /* ✅ Fix: Include padding in width */
+  box-sizing: border-box;
 
   @media (max-width: 768px) {
-    padding: 0.8rem; /* ✅ Fix: Adjust padding for mobile */
+    padding: 0.8rem;
     font-size: 0.95rem;
   }
 `
@@ -76,12 +76,12 @@ const TextArea = styled.textarea`
   background: #fdfdfd;
   resize: none;
   margin-bottom: 1rem;
-  box-sizing: border-box; /* ✅ Fix: Include padding in width */
+  box-sizing: border-box;
 
   @media (max-width: 768px) {
-    padding: 0.8rem; /* ✅ Fix: Adjust padding for mobile */
+    padding: 0.8rem;
     font-size: 0.95rem;
-    height: 120px; /* ✅ Fix: Smaller height on mobile */
+    height: 120px;
   }
 `
 
@@ -95,8 +95,8 @@ const Button = styled.button`
   padding: 0.8rem 2rem;
   cursor: pointer;
   transition: all 0.25s ease;
-  width: 100%; /* ✅ Fix: Full width for better mobile UX */
-  box-sizing: border-box; /* ✅ Fix: Include padding in width */
+  width: 100%;
+  box-sizing: border-box;
 
   &:hover {
     transform: scale(1.05);
@@ -115,7 +115,7 @@ const Status = styled.p`
   color: #fff;
   font-weight: 500;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
-  word-wrap: break-word; /* ✅ Fix: Prevent text overflow */
+  word-wrap: break-word;
 
   @media (max-width: 768px) {
     font-size: 0.9rem;
@@ -126,7 +126,7 @@ export default function Contact() {
   const form = useRef<HTMLFormElement>(null)
   const [status, setStatus] = useState<string>('')
 
-  // ✉️ Handle Email Sending via EmailJS
+  // ✉️ EmailJS を使ってメールを送信
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault()
 
@@ -141,12 +141,12 @@ export default function Contact() {
       )
       .then(
         () => {
-          setStatus("✅ Thanks for reaching out! I'll get back to you soon.")
+          setStatus("✅ メッセージを送信しました！確認次第、ご連絡いたします。")
           form.current?.reset()
         },
         (error) => {
           console.error('FAILED...', error)
-          setStatus('❌ Something went wrong. Please try again later.')
+          setStatus('❌ エラーが発生しました。もう一度お試しください。')
         }
       )
   }
@@ -158,14 +158,14 @@ export default function Contact() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <Heading>Contact Me</Heading>
+        <Heading>お問い合わせ</Heading>
 
         <form ref={form} onSubmit={sendEmail}>
-          <Input type="text" name="user_name" placeholder="Your Name" required />
-          <Input type="email" name="user_email" placeholder="Your Email" required />
-          <Input type="text" name="user_phone" placeholder="Your Phone (optional)" />
-          <TextArea name="message" placeholder="Write your message here..." required />
-          <Button type="submit">Send Message 💌</Button>
+          <Input type="text" name="user_name" placeholder="お名前" required />
+          <Input type="email" name="user_email" placeholder="メールアドレス" required />
+          <Input type="text" name="user_phone" placeholder="電話番号 (任意)" />
+          <TextArea name="message" placeholder="メッセージをご記入ください…" required />
+          <Button type="submit">送信する 💌</Button>
         </form>
 
         {status && <Status>{status}</Status>}

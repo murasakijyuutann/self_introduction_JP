@@ -90,38 +90,38 @@ const fadeInUp = {
 export default function Projects() {
   const projects = [
     {
-      title: '🎬 Movie Explorer',
-      desc: 'A TMDB-powered movie search application with infinite scroll, responsive design, and detailed movie information pages.',
+      title: '🎬 ムービーエクスプローラー',
+      desc: 'TMDB API を利用した映画検索アプリ。無限スクロール、レスポンシブデザイン、詳細ページあり。',
       tech: 'React · Tailwind CSS · TMDB API',
       link: 'https://github.com/murasakijyuutann/movie-review-project',
     },
     {
-      title: '📋 Spring Boot Board',
-      desc: 'A token-authenticated backend system with DTOs, role-based access control, and Swagger API documentation.',
+      title: '📋 Spring Boot 掲示板',
+      desc: 'トークン認証、DTO、ロールベース認証、Swagger API ドキュメントを備えたバックエンドシステム。',
       tech: 'Spring Boot · MyBatis · JWT · Swagger',
       link: 'https://github.com/murasakijyuutann/spring_boot_board',
     },
     {
-      title: '🎧 Vocaloid Shopping Mall',
-      desc: 'A full-stack e-commerce platform with user authentication, product catalog, shopping cart, and order processing integrated with Spring Boot REST API.',
+      title: '🎧 ボーカロイドショッピングモール',
+      desc: 'ユーザー認証、商品カタログ、カート、注文処理などを備えたフルスタックEコマース。',
       tech: 'React · Styled-Components · TypeScript · Spring Boot · MySQL RDS',
       link: 'https://github.com/murasakijyuutann/vocaloidshop-fullstack',
     },
     {
-      title: '🚌 Public Transport Payment System',
-      desc: 'A Spring Boot payment system API featuring card management, fare calculation, and transaction processing with Thymeleaf frontend and AWS MySQL.',
+      title: '🚌 公共交通支払いシステム',
+      desc: 'カード管理、運賃計算、トランザクション処理を備えたSpring Boot API。Thymeleafで UI 実装。',
       tech: 'Spring Boot · Thymeleaf · Bootstrap · MySQL · AWS RDS',
       link: 'https://github.com/murasakijyuutann/public-transport-system',
     },
     {
-      title: '🧾 Self Intro Repository',
-      desc: 'A modern portfolio website showcasing technical skills and projects with responsive design, smooth animations, and interactive features. Deployed on Vercel.',
+      title: '🧾 自己紹介ポートフォリオサイト',
+      desc: 'スキルやプロジェクトを紹介するモダンなポートフォリオサイト。アニメーション・レスポンシブ対応。',
       tech: 'React · TypeScript · Styled-Components · Framer Motion · Vercel',
       link: 'https://github.com/murasakijyuutann/self_introduction',
     },
     {
-      title: '🎲 Chinchirorin Game',
-      desc: 'A React mini-game recreating the traditional Japanese dice game with smooth animations and sound effects.',
+      title: '🎲 ちんちろりんゲーム',
+      desc: '日本の伝統的なダイスゲームを再現した React ミニゲーム。アニメーションとサウンド対応。',
       tech: 'React · Framer Motion · Howler.js',
       link: 'https://github.com/murasakijyuutann/self_introduction/blob/main/src/pages/Chinchiro.tsx',
     },
@@ -134,7 +134,7 @@ export default function Projects() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <Heading>My Projects</Heading>
+        <Heading>プロジェクト一覧</Heading>
 
         <ProjectGrid>
           {projects.map((p, i) => (
@@ -150,7 +150,7 @@ export default function Projects() {
               <Description>{p.desc}</Description>
               <TechList>{p.tech}</TechList>
               <Link href={p.link} target="_blank" rel="noopener noreferrer">
-                View on GitHub →
+                GitHubで見る →
               </Link>
             </Card>
           ))}

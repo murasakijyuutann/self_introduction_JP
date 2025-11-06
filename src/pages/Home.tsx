@@ -291,10 +291,10 @@ export default function Home() {
           <Heading>
             <Typewriter
               words={[
-                "Hi, I'm Fishyboyxx.",
-                'Full-Stack Developer.',
-                'Trilingual Engineer.',
-                'Welcome to my portfolio.'
+                "こんにちは、Fishyboyxx です。",
+                'フルスタック開発者です。',
+                'トリリンガルエンジニアです。',
+                'ポートフォリオへようこそ。',
               ]}
               loop
               cursor
@@ -306,7 +306,7 @@ export default function Home() {
           </Heading>
           
           <Tagline>
-            Building modern web applications with React & Spring Boot
+            React と Spring Boot を使ったモダンな Web アプリケーションを構築しています。
           </Tagline>
           
           <SocialLinks>
@@ -329,41 +329,41 @@ export default function Home() {
         >
           <ProfileCard>
             <Avatar>
-              <img src="/images/piapro.jpg" alt="Profile Avatar" />
+              <img src="/images/piapro.jpg" alt="プロフィール画像" />
             </Avatar>
             <ProfileName>Fishyboyxx</ProfileName>
-            <ProfileRole>Full-Stack Developer</ProfileRole>
+            <ProfileRole>フルスタック開発者</ProfileRole>
             <ProfileBio>
-              Passionate about turning ideas into real products and connecting cultures through technology.
-              Fluent in React, Spring Boot, and three human languages (English, Korean, Japanese).
+              アイデアを実際のプロダクトに変え、テクノロジーを通じて文化をつなぐことに情熱を注いでいます。
+              React、Spring Boot、そして 3か国語 (英語・韓国語・日本語) を操ります。
             </ProfileBio>
             
             <StatsGrid>
               <StatItem>
                 <h3>3+</h3>
-                <p>Years Experience</p>
+                <p>年の開発経験</p>
               </StatItem>
               <StatItem>
                 <h3>15+</h3>
-                <p>Projects Built</p>
+                <p>制作プロジェクト</p>
               </StatItem>
               <StatItem>
                 <h3>3</h3>
-                <p>Languages</p>
+                <p>対応言語</p>
               </StatItem>
             </StatsGrid>
           </ProfileCard>
 
           <HighlightsCard>
-            <ProfileName style={{ marginBottom: '1.5rem', textAlign: 'left' }}>Key Highlights</ProfileName>
+            <ProfileName style={{ marginBottom: '1.5rem', textAlign: 'left' }}>主な経歴</ProfileName>
             
             <HighlightItem>
               <IconWrapper>
                 <FaGraduationCap />
               </IconWrapper>
               <HighlightContent>
-                <h4>Education & Training</h4>
-                <p>Bachelor's in Systems Administration (Australia) + Java Development Bootcamp (Korea)</p>
+                <h4>学歴・研修</h4>
+                <p>システム管理学士（豪州）、Java開発ブートキャンプ修了（韓国）</p>
               </HighlightContent>
             </HighlightItem>
             
@@ -372,8 +372,8 @@ export default function Home() {
                 <FaBriefcase />
               </IconWrapper>
               <HighlightContent>
-                <h4>Professional Experience</h4>
-                <p>Full-time developer role in Sydney, specializing in backend Java systems and full-stack testing</p>
+                <h4>実務経験</h4>
+                <p>シドニーの開発会社でフルタイムの Java エンジニアとして勤務</p>
               </HighlightContent>
             </HighlightItem>
             
@@ -382,8 +382,8 @@ export default function Home() {
                 <FaCode />
               </IconWrapper>
               <HighlightContent>
-                <h4>Technical Expertise</h4>
-                <p>React, Spring Boot, AWS, MySQL, TypeScript, Docker, MyBatis, JWT Authentication</p>
+                <h4>技術スタック</h4>
+                <p>React、Spring Boot、AWS、TypeScript、Docker、MyBatis、JWT 認証など</p>
               </HighlightContent>
             </HighlightItem>
           </HighlightsCard>
@@ -395,14 +395,14 @@ export default function Home() {
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate('/projects')}
           >
-            View My Projects →
+            プロジェクトを見る →
           </CTAButton>
           <SecondaryButton
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate('/journey')}
           >
-            See My Journey
+            開発の歩みを見る
           </SecondaryButton>
         </CTASection>
       </Container>

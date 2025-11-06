@@ -78,17 +78,17 @@ const fadeUp = {
 }
 
 const aboutParagraphs = [
-  `Full-stack developer with 3+ years of hands-on experience building modern web applications using React, Spring Boot, and cloud infrastructure.`,
-  `From systems administration to full-stack development — I specialize in creating scalable backends, responsive frontends, and deploying production-ready apps on AWS EC2.`,
-  `Trilingual engineer (English, Japanese N1, Korean Native) seeking to join Japanese tech teams where I can bridge cultures and build impactful software.`,
+  `React や Spring Boot、クラウドインフラを活用してモダンな Web アプリケーションを構築した実務経験 3年以上のフルスタック開発者です。`,
+  `システム管理からフルスタック開発まで — スケーラブルなバックエンドとレスポンシブなフロントエンドを作成し、AWS EC2 上への本番デプロイも経験しています。`,
+  `英語・日本語(N1)・韓国語の 3ヶ国語対応エンジニアとして、文化の架け橋となりながら日本の開発チームに貢献したいと考えています。`,
 ]
 
 export default function AboutMe() {
   return (
     <Section id="about">
-      <Title>About Me</Title>
+      <Title>私について</Title>
       <Subtitle>
-        A developer bridging technology, culture, and creativity.
+        テクノロジー・文化・創造性をつなぐ開発者です。
       </Subtitle>
 
       <ContentWrapper>
@@ -105,7 +105,7 @@ export default function AboutMe() {
           </Paragraph>
         ))}
 
-        <Signature>"Code is my language. Culture is my bridge."</Signature>
+        <Signature>「コードは私の言語。文化は私の架け橋。」</Signature>
       </ContentWrapper>
     </Section>
   )

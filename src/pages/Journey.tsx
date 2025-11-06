@@ -6,51 +6,51 @@ import { FaGraduationCap, FaBriefcase, FaCode, FaPlane, FaRocket, FaMapMarkerAlt
 const journeyData = [
   {
     year: '2015–2016',
-    title: 'Began My IT Journey in Australia',
+    title: 'オーストラリアでIT学習をスタート',
     description:
-      'Completed a Diploma of IT at UTS:INSEARCH, gaining solid foundations in networking, databases, and programming.',
+      'UTS:INSEARCHでITディプロマを取得。 ネットワーキング、データベース、プログラミングの基礎を習得。',
     icon: FaGraduationCap,
-    location: 'Sydney, Australia',
+    location: 'シドニー、オーストラリア',
   },
   {
     year: '2017–2019',
-    title: 'Advanced to Bachelor Studies',
+    title: 'システム管理専攻で学士号取得',
     description:
-      'Majored in Systems Administration at Charles Sturt University in Sydney, deepening expertise in cloud infrastructure and IT management.',
+      'Charles Sturt Universityにてシステム管理を専攻し、クラウドインフラとITマネジメントを中心に学習。',
     icon: FaGraduationCap,
-    location: 'Sydney, Australia',
+    location: 'シドニー、オーストラリア',
   },
   {
     year: '2020–2022',
-    title: 'Internship & Full-Time Developer Role',
+    title: 'インターンからフルタイム開発者へ',
     description:
-      'Worked first as an intern, then transitioned into a full-time role assisting full-stack teams — mainly testing, debugging, and improving backend Java systems.',
+      '最初はインターンとして、のちにフルタイムのJavaエンジニアとしてバックエンド開発を担当。',
     icon: FaBriefcase,
-    location: 'Sydney, Australia',
+    location: 'シドニー、オーストラリア',
   },
   {
     year: '2023',
-    title: 'Returned to Korea & Java Bootcamp',
+    title: '帰国後、Javaブートキャンプ修了',
     description:
-      'Completed a 6-month Java developer bootcamp after returning from Australia. Strengthened full-stack fundamentals using Spring Boot, MyBatis, AWS, and React.',
+      '帰国後に6ヶ月のJava開発ブートキャンプを修了。Spring Boot、MyBatis、AWS、Reactなどを習得。',
     icon: FaPlane,
-    location: 'Seoul, South Korea',
+    location: 'ソウル、韓国',
   },
   {
     year: '2024',
-    title: 'Expanding Technical Stack',
+    title: '技術スタックの拡張と本番デプロイ',
     description:
-      'Built full-stack projects integrating OAuth, JWT, MyBatis, EC2 deployments, and Vite-based React frontends while improving UI/UX design practices.',
+      'OAuth、JWT、EC2デプロイ、ViteベースのReact構築など、複数のフルスタックプロジェクトを制作。',
     icon: FaCode,
-    location: 'Seoul, South Korea',
+    location: 'ソウル、韓国',
   },
   {
     year: '2025',
-    title: 'Preparing for a Career in Japan',
+    title: '日本でのキャリアを準備中',
     description:
-      'Currently enrolled in a Japan-placement bootcamp, refining my portfolio to present three years of experience and preparing for interviews with Japanese IT companies.',
+      '日本就職向けブートキャンプに参加中。実務経験3年以上相当のポートフォリオを仕上げつつ、面接対策も進行中。',
     icon: FaRocket,
-    location: 'Seoul, South Korea',
+    location: 'ソウル、韓国',
   },
 ]
 
@@ -213,9 +213,9 @@ export default function Journey() {
   return (
     <Section id="journey">
       <Container>
-        <Title>My Developer Journey</Title>
+        <Title>開発の歩み</Title>
         <Subtitle>
-          From Australia to Korea, building towards a career in Japan 🌏
+          オーストラリアから韓国、日本の未来へ 🌏
         </Subtitle>
         <Timeline>
           {journeyData.map((item, idx) => {

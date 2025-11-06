@@ -147,13 +147,13 @@ export default function Navbar() {
   }, [isOpen])
 
   const links = [
-    { to: '/', label: 'Home' },
-    { to: '/about', label: 'About' },
-    { to: '/journey', label: 'Journey' },
-    { to: '/chinchiro', label: 'Chinchiro' },
-    { to: '/skills', label: 'Skills' },
-    { to: '/projects', label: 'Projects' },
-    { to: '/contact', label: 'Contact' },
+    { to: '/', label: 'ホーム' },
+    { to: '/about', label: '私について' },
+    { to: '/journey', label: '経歴' },
+    { to: '/chinchiro', label: 'ちんちろりん' },
+    { to: '/skills', label: 'スキル' },
+    { to: '/projects', label: 'プロジェクト' },
+    { to: '/contact', label: 'お問い合わせ' },
   ]
 
   return (
@@ -176,7 +176,7 @@ export default function Navbar() {
       <Hamburger
         onClick={toggleMenu}
         isOpen={isOpen}
-        aria-label={isOpen ? 'Close Menu' : 'Open Menu'}
+        aria-label={isOpen ? 'メニューを閉じる' : 'メニューを開く'}
       >
         <span />
         <span />
