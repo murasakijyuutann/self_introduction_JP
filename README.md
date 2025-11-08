@@ -1,154 +1,298 @@
-# 🌸 自己紹介 / 開発者ポートフォリオ — *Fishyboyxx*
+# 🌸 開発者ポートフォリオ — Sunmyung Woo
 
-**React + Vite + TypeScript + Styled Components**で構築された個人開発者ポートフォリオです。スムーズなアニメーション、バイリンガル対応のセクション、そして**初音ミクのミント×ピンクカラーパレット**にインスパイアされたクリーンでモダンなUIが特徴です。  
-このサイトでは、私の歩み、スキル、プロジェクトを紹介し、プロダクションレベルのReactアプリケーションを設計・構築・デプロイする能力を実証しています。
+<div align="center">
 
----
+[![ライブデモ](https://img.shields.io/badge/🌐_ライブデモ-サイトを見る-667eea?style=for-the-badge)](https://self-introduction-i11.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-murasakijyuutann-181717?style=for-the-badge&logo=github)](https://github.com/murasakijyuutann)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-接続する-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/sunmyung-woo-44b175221/)
 
-## 🌐 ライブデモ
-> [https://self-introduction-jp.vercel.app/](https://self-introduction-jp.vercel.app/)
+**React、Spring Boot、およびクラウド技術における3年以上の経験を紹介するモダンなフルスタック開発者ポートフォリオ。**
 
----
-
-## 🧭 概要
-
-このポートフォリオは、**自己紹介**と**インタラクティブな履歴書**の両方として機能し、モダンなフロントエンドツールの実用的な使用法を実証しています。  
-各セクションは、バックエンド統合からUI設計まで、開発者としての私の成長の一部を表しています。
-
-### ✨ 特徴
-- 🎨 レスポンシブレイアウトを備えた**ミクテーマのグラデーション**美学  
-- 🪶 滑らかな視覚的トランジションのための**Framer Motionアニメーション**  
-- 🧠 スケーラビリティとクリーンな設計のための**再利用可能なスタイルコンポーネント**  
-- 🧩 Reactで構築された**インタラクティブなチンチロリンゲーム**（ミニプロジェクトショーケース）  
-- 💬 直接コミュニケーションのための**EmailJS連絡フォーム**  
-- 🌎 **バイリンガル対応レイアウト**（英語、日本語拡張可能）  
-- 🔗 **アクティブナビゲーションハイライト**とアクセシビリティに配慮したマークアップ
+[特徴](#-特徴) • [技術スタック](#-技術スタック) • [はじめに](#-はじめに) • [プロジェクト](#-注目プロジェクト) • [連絡先](#-連絡先)
 
 ---
 
-## 🧱 技術スタック
+</div>
 
-| カテゴリ | ツール & フレームワーク |
-|-----------|--------------------|
-| **フロントエンド** | React (Vite)、TypeScript、Styled Components、Framer Motion |
-| **バックエンド (将来の拡張用)** | Spring Boot · MyBatis · Node.js · Express |
-| **ユーティリティ** | EmailJS、Axios、Postman、Swagger |
-| **クラウド / デプロイ** | AWS EC2、Vercel |
-| **デザイン** | Tailwind (レガシーセクション)、カスタムグラデーション |
-| **バージョン管理** | Git、GitHub |
+## 📋 概要
+
+このポートフォリオは、モダンなWeb技術で構築された**本番環境対応のReactアプリケーション**であり、以下の専門知識を実証しています：
+
+- TypeScriptとコンポーネントベース設計によるフロントエンドアーキテクチャ
+- アニメーションとレスポンシブレイアウトによる高度なUI/UX
+- サードパーティサービス（EmailJS）との統合
+- クラウドデプロイメントとCI/CDプラクティス
+
+このサイトは、**プロフェッショナルな履歴書**と**技術ショーケース**の両方として機能し、オーストラリアでのシステム管理の学習からフルスタック開発の役割、そして現在の日本でのソフトウェアエンジニアリングキャリアの準備までの私の歩みを紹介しています。
 
 ---
 
-## 🗂️ プロジェクト構造
+## ✨ 特徴
+
+### 🎨 **モダンなUI/UX**
+- グラスモーフィックデザイン要素を使用したアニメーショングラデーション背景
+- Framer Motionを使用したスムーズなページトランジション
+- モバイル、タブレット、デスクトップ向けに最適化されたレスポンシブレイアウト
+- アクティブリンクハイライトを備えたアクセシビリティ対応ナビゲーション
+
+### 🚀 **インタラクティブなセクション**
+- **ヒーローセクション**: ソーシャルメディア統合を備えた動的なタイプライター効果
+- **キャリアタイムライン**: キャリア進捗を示す交互配置のカードレイアウト
+- **スキルショーケース**: 80以上のスキルを含むカテゴリ別技術グリッド
+- **プロジェクトポートフォリオ**: 説明とリンクを含むプロフェッショナルなプロジェクトカード
+- **連絡フォーム**: バリデーション機能を備えたEmailJS駆動の連絡システム
+
+### 🎮 **ボーナス機能**
+- **チンチロリンゲーム**: Reactで構築されたインタラクティブな日本のサイコロゲーム
+  - リアルタイムゲームロジックとスコアリングシステム
+  - Howler.jsを使用したサウンドエフェクト
+  - スムーズなアニメーションと状態管理
+  - モバイルレスポンシブコントロール
+
+---
+
+## 🛠 技術スタック
+
+### **フロントエンド**
+![React](https://img.shields.io/badge/React_19-20232A?style=flat&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+![Styled Components](https://img.shields.io/badge/Styled_Components-DB7093?style=flat&logo=styled-components&logoColor=white)
+
+### **ライブラリ & ツール**
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat&logo=framer&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=react-router&logoColor=white)
+![EmailJS](https://img.shields.io/badge/EmailJS-4285F4?style=flat&logo=gmail&logoColor=white)
+![React Icons](https://img.shields.io/badge/React_Icons-E91E63?style=flat&logo=react&logoColor=white)
+
+### **デプロイメント & CI/CD**
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+
+---
+
+## 🗂 プロジェクト構造
 
 ```
-src/
-┣ components/
-┃ ┣ Navbar.tsx # アクティブリンクハイライト付きレスポンシブナビゲーションバー
-┃ ┣ Home.tsx # タイプライター風イントロ付きヒーローセクション
-┃ ┣ About.tsx # 自己紹介とキャリア目標
-┃ ┣ Journey.tsx # 学習とキャリアの進捗タイムライン
-┃ ┣ Skills.tsx # モーションエフェクト付きカテゴリ別スキルバッジ
-┃ ┣ Projects.tsx # GitHubリンク付きポートフォリオショーケース
-┃ ┣ Chinchiro.tsx # ミニReactダイスゲーム（文化×技術コンセプト）
-┃ ┣ Contact.tsx # EmailJS統合メールフォーム
-┃ ┗ Footer.tsx # ソーシャルアイコン + タグライン
-┣ styles/
-┃ ┗ AnimatedBackground.ts # 共有グラデーションアニメーション
-┣ App.tsx
-┗ main.tsx
+my/
+├── public/
+│   └── images/              # 静的アセット（プロフィール写真、プロジェクト画像）
+├── src/
+│   ├── components/
+│   │   ├── Navbar.tsx       # ハンバーガーメニュー付きレスポンシブナビゲーション
+│   │   └── Footer.tsx       # ソーシャルリンクと著作権表示
+│   ├── pages/
+│   │   ├── Home.tsx         # 統計情報とハイライトを含むヒーローセクション
+│   │   ├── About.tsx        # 個人的な背景とストーリー
+│   │   ├── Journey.tsx      # アイコンと場所を含むキャリアタイムライン
+│   │   ├── Skills.tsx       # カテゴリ別技術グリッド
+│   │   ├── Projects.tsx     # ポートフォリオショーケース
+│   │   ├── Chinchiro.tsx    # インタラクティブサイコロゲーム
+│   │   └── Contact.tsx      # EmailJS連絡フォーム
+│   ├── styles/
+│   │   └── AnimatedBackground.ts  # 共有グラデーションアニメーション
+│   ├── App.tsx              # メインルーターとレイアウト
+│   ├── main.tsx             # アプリケーションエントリーポイント
+│   └── index.css            # グローバルスタイル
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── vercel.json              # デプロイメント設定
 ```
 
 ---
 
-# 🚀 はじめに
+## 🚀 はじめに
 
-## 💻 セットアップ & ローカル実行
+### 前提条件
+- **Node.js** 18+ および **npm** 9+
+- バージョン管理用の **Git**
 
-### 🧩 ステップ 1. リポジトリをクローン
+### インストール
 
+**1. リポジトリをクローン**
 ```bash
-git clone https://github.com/yourusername/self-intro-portfolio.git
-cd self-intro-portfolio
+git clone https://github.com/murasakijyuutann/self_introduction.git
+cd self_introduction/my
 ```
 
-### ⚙️ ステップ 2. 依存関係をインストール
-
+**2. 依存関係をインストール**
 ```bash
 npm install
 ```
 
-### 🔐 ステップ 3. EmailJS環境変数を設定
+**3. 環境変数を設定**（オプション、連絡フォーム用）
 
-プロジェクトルートに `.env` ファイルを作成し、以下を追加します：
-
-```bash
+ルートディレクトリに `.env` ファイルを作成：
+```env
 VITE_EMAILJS_SERVICE_ID=your_service_id
 VITE_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
-### 🚀 ステップ 4. 開発サーバーを起動
+> EmailJSの認証情報は [emailjs.com](https://www.emailjs.com/) で取得してください
+
+**4. 開発サーバーを起動**
 ```bash
 npm run dev
 ```
 
-その後、ブラウザで 👉 http://localhost:5173 を開きます。
+ブラウザで [http://localhost:5173](http://localhost:5173) を開きます
+
+**5. 本番環境用にビルド**
+```bash
+npm run build
+npm run preview  # 本番ビルドをローカルでプレビュー
+```
 
 ---
 
-## 💼 注目プロジェクト
+## 📦 主な依存関係
 
-| プロジェクト | 説明 | 技術スタック |
-|----------|--------------|------------|
-| 🎬 Movie Explorer | 無限スクロール & レスポンシブUIを備えたTMDB API駆動のReactアプリ | React · Tailwind CSS · TMDB API |
-| 📋 Spring Boot Board | DTO、Swagger UI、ロールアクセス制御を備えたトークン認証バックエンド | Spring Boot · MyBatis · JWT |
-| 🛍 JSP Shopping Mall | ログイン & カートシステムを備えたJSP/Servletベースのeコマースプロトタイプ | JSP · JSTL · Tomcat |
-| ☁️ EC2 Todo App | Supabase OAuthログインを備えたAWS EC2にデプロイされたフルスタックアプリ | React · NestJS · Prisma |
-| 🎧 Vocaloid DAO Simulator | VocaloidキャラクターをテーマにしたJava OOPコレクションプロジェクト | Java · DAOパターン |
-| 🎲 Chinchirorin Game | サウンド & モーション付き伝統的な日本のダイスゲームリメイク | React · Framer Motion · Howler.js |
+| パッケージ | バージョン | 用途 |
+|---------|---------|---------|
+| `react` | ^19.1.1 | UIフレームワーク |
+| `typescript` | ~5.9.3 | 型安全性 |
+| `vite` | ^7.1.7 | ビルドツールと開発サーバー |
+| `styled-components` | ^6.1.19 | CSS-in-JSスタイリング |
+| `framer-motion` | ^12.23.24 | アニメーションライブラリ |
+| `react-router-dom` | ^7.9.4 | クライアントサイドルーティング |
+| `@emailjs/browser` | ^4.4.1 | 連絡フォームバックエンド |
+| `react-simple-typewriter` | ^5.0.1 | タイプライター効果 |
+| `howler` | ^2.2.4 | オーディオ再生 |
+| `react-icons` | ^5.5.0 | アイコンライブラリ |
+
+---
+
+## 🎯 注目プロジェクト
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3>🎬 Movie Explorer</h3>
+      <p><strong>説明:</strong> 無限スクロールページネーションと完全レスポンシブデザインを備えたTMDB駆動の検索アプリケーション。</p>
+      <p><strong>技術:</strong> React • Tailwind CSS • TMDB API</p>
+      <p><a href="https://github.com/murasakijyuutann/movie-review-project">リポジトリを見る →</a></p>
+    </td>
+    <td width="50%">
+      <h3>📋 Spring Boot Board</h3>
+      <p><strong>説明:</strong> ロールベースアクセス制御とSwagger APIドキュメントを備えたトークン認証バックエンドシステム。</p>
+      <p><strong>技術:</strong> Spring Boot • MyBatis • JWT • Swagger</p>
+      <p><a href="https://github.com/murasakijyuutann/spring_boot_board">リポジトリを見る →</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>🎧 Vocaloid Shopping Mall</h3>
+      <p><strong>説明:</strong> ユーザー認証、商品カタログ、ショッピングカート、注文処理機能を備えたフルスタックECプラットフォーム。</p>
+      <p><strong>技術:</strong> React • TypeScript • Spring Boot • MySQL</p>
+      <p><a href="https://github.com/murasakijyuutann/vocaloidshop-fullstack">リポジトリを見る →</a></p>
+    </td>
+    <td width="50%">
+      <h3>🚌 公共交通決済システム</h3>
+      <p><strong>説明:</strong> カード管理、運賃計算、AWSインフラを使用した取引処理機能を備えた決済システムAPI。</p>
+      <p><strong>技術:</strong> Spring Boot • Thymeleaf • Bootstrap • AWS RDS</p>
+      <p><a href="https://github.com/murasakijyuutann/public-transport-system">リポジトリを見る →</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3>🎲 チンチロリンゲーム</h3>
+      <p><strong>説明:</strong> スムーズなアニメーションとサウンドエフェクトを備えた伝統的な日本のサイコロゲームのインタラクティブな再現。</p>
+      <p><strong>技術:</strong> React • Framer Motion • Howler.js</p>
+      <p><a href="https://github.com/murasakijyuutann/self_introduction/blob/main/src/pages/Chinchiro.tsx">コードを見る →</a></p>
+    </td>
+    <td width="50%">
+      <h3>🌐 このポートフォリオ</h3>
+      <p><strong>説明:</strong> レスポンシブデザイン、インタラクティブなセクション、スキルと経験のプロフェッショナルなプレゼンテーションを備えたモダンなポートフォリオサイト。</p>
+      <p><strong>技術:</strong> React • TypeScript • Styled Components • Vercel</p>
+      <p><a href="https://self-introduction-i11.vercel.app/">ライブデモを見る →</a></p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🌍 デプロイメント
+
+このプロジェクトは **Vercel** にデプロイされており、mainブランチからの自動デプロイメントが設定されています。
+
+### 手動デプロイメント
+```bash
+# Vercel CLIをインストール
+npm i -g vercel
+
+# デプロイ
+vercel --prod
+```
+
+### 環境設定
+`vercel.json` ファイルには、React Routerをサポートするためのルーティング設定が含まれています：
+```json
+{
+  "rewrites": [{
+    "source": "/((?!images/).*)",
+    "destination": "/index.html"
+  }]
+}
+```
+
+---
+
+## 🗺 ロードマップ
+
+### 短期目標
+- [ ] ダークモードトグルを追加
+- [ ] 技術別プロジェクトフィルタリングを実装
+- [ ] 履歴書/CVダウンロードボタンを追加
+- [ ] ポートフォリオカードにプロジェクトのスクリーンショットを含める
+
+### 中期目標
+- [ ] MDXサポート付きブログセクションを統合
+- [ ] 日本語言語トグルを追加（日本語版）
+- [ ] 動的コンテンツ用のSpring Bootバックエンドを実装
+- [ ] プロジェクト管理用の管理パネルを作成
+
+### 長期ビジョン
+- [ ] SSR/SSGの利点のためにNext.jsに移行
+- [ ] 分析ダッシュボードを追加
+- [ ] リアルタイムチャット機能を実装
+- [ ] カスタムドメインとSSL（Route 53 + CloudFront）
 
 ---
 
 ## 📫 連絡先
 
-お問い合わせやコラボレーションをご希望の場合：
+**Sunmyung Woo** — フルスタック開発者
 
-| プラットフォーム | リンク |
-|-----------|------|
-| 💌 **Email** | [fishyboyxx@protonmail.com](mailto:fishyboyxx@protonmail.com) |
-| 🐙 **GitHub** | [github.com/murasakijyuutann](https://github.com/murasakijyuutann) |
-| 💼 **LinkedIn** | [linkedin.com/in/sunmyung-woo-44b175221/](https://www.linkedin.com/in/sunmyung-woo-44b175221/e) |
-| 🧠 **Qiita** | [qiita.com/murasakijyuutann](https://qiita.com/murasakijyuutann) |
+- 📧 Email: [neneke.emu@gmail.com](mailto:neneke.emu@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/sunmyung-woo-44b175221](https://www.linkedin.com/in/sunmyung-woo-44b175221/)
+- 🐙 GitHub: [github.com/murasakijyuutann](https://github.com/murasakijyuutann)
+- 📝 Qiita: [qiita.com/murasakijyuutann](https://qiita.com/murasakijyuutann)
 
 ---
 
-## 🧩 哲学
+## 📄 ライセンス
 
-> **「コードは私の言語。文化は私の架け橋。」**  
-> このポートフォリオは、私が構築するすべてのプロジェクトにおいて、  
-> 技術的スキル、創造性、異文化理解を融合させるという使命を反映しています。
+このプロジェクトはオープンソースであり、[MITライセンス](LICENSE)の下で利用可能です。
 
 ---
 
-## 🛠️ 今後の計画
+## 🙏 謝辞
 
-- 🇯🇵 **日本語版ページ**トグルを追加  
-- 🔗 動的なプロジェクト更新のための**Spring Boot APIバックエンド**を統合  
-- 🌗 アクセシビリティのための**ダークモード**トグルを追加  
-- ☁️ **Vercel + AWS Route 53**カスタムドメインでデプロイ  
-
----
-
-## 🧾 ライセンス
-
-このプロジェクトは**MITライセンス**の下でオープンソースです。  
-自由に**フォーク**、**修正**、**適応**してご利用ください。
+- モダンなポートフォリオトレンドからのデザインインスピレーション
+- グラスモーフィズムデザイン原則からインスパイアされたグラデーションアニメーション
+- 日本の伝統的なギャンブル文化からのチンチロリンゲームルール
+- [React Icons](https://react-icons.github.io/react-icons/)によるアイコン提供
+- [Vercel](https://vercel.com/)によるデプロイメント支援
 
 ---
 
-## 💬 最後に
+<div align="center">
 
-> このポートフォリオは、**Farah Sinclair (Fishyboyxx)**によって設計・構築され、  
-> *実務経験3年レベルの開発者*のフルスタックスキルセットを表現しています。  
-> ご訪問ありがとうございます！ 🌸
+**⭐ このポートフォリオが役立つと思ったら、スターを付けていただけると嬉しいです！**
+
+Made with ❤️ by Sunmyung Woo | 2025
+
+</div>
