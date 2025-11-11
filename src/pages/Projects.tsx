@@ -104,14 +104,14 @@ export default function Projects() {
     {
       title: '🎧 ボーカロイドショッピングモール',
       desc: 'ユーザー認証、商品カタログ、カート、注文処理などを備えたフルスタックEコマース。',
-      tech: 'React · Styled-Components · TypeScript · Spring Boot · MySQL RDS',
-      link: 'https://github.com/murasakijyuutann/vocaloidshop-fullstack',
+      tech: 'Spring Boot · Thymeleaf · Bootstrap · MySQL · AWS RDS',
+      link: 'https://github.com/murasakijyuutann/vocaloid_store',
     },
     {
       title: '🚌 公共交通支払いシステム',
       desc: 'カード管理、運賃計算、トランザクション処理を備えたSpring Boot API。Thymeleafで UI 実装。',
       tech: 'Spring Boot · Thymeleaf · Bootstrap · MySQL · AWS RDS',
-      link: 'https://github.com/murasakijyuutann/public-transport-system',
+      link: 'https://github.com/murasakijyuutann/transport_payment',
     },
     {
       title: '🧾 自己紹介ポートフォリオサイト',
